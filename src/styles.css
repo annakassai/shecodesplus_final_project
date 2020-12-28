@@ -1,0 +1,181 @@
+h1,
+h3,
+h5,
+p,
+li {
+  font-family: sans-serif;
+  text-align: left;
+  line-height: 1;
+  color: #464141;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+ul {
+  margin:4px; 
+  padding:4px;
+}
+
+li {
+  list-style: none;
+  font-weight: 520;
+  font-size: 16px;
+}
+
+li.special {
+  float: center;
+  font-size: 13px;
+  margin-left: 12px;
+  padding: 5px;
+}
+
+li.day {
+  text-align: left;
+  margin-left: 20px;
+  padding:10px; 
+}
+
+li.graph{
+  text-align: center;
+  padding:10px;
+}
+
+li.forecast{
+  text-align: center;
+  margin-right: 20px;
+  padding:10px; 
+}
+
+.firstContainer {
+  margin:8px auto;
+  padding: 18px;
+  max-width: 450px;
+  max-height: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-blend-mode: screen;
+  box-shadow: 0px 15px 15px 0px rgba(255, 255, 255, 0.5);
+}
+
+.footerContainer {
+  margin: 8px auto;
+  padding: 0px;
+  max-width: 450px;
+  max-height: fit-content;
+}
+
+.searchengine {
+  margin-left: 10px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  color: #464141;
+}
+
+#submit-location {
+  padding: 5px 18px;
+  margin-left: 10px;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+#location {
+  padding: 5px 18px;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+.innerContainer {
+  margin: 8px;
+  padding: 6px;
+  max-width: 450px;
+  max-height: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-blend-mode: screen;
+  box-shadow: 0px 15px 15px 0px rgba(255, 255, 255, 0.5);
+}
+
+.data {
+  margin-left: 20px;
+  padding:4px;
+}
+
+.fa-sun {
+  padding: 5px;
+  margin: 0;
+  font-size: 60px;
+  color: #e0a800;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: 900px;
+}
+
+.units {
+  position: relative; 
+  font-size: 14px;
+  top: -32px;
+}
+
+.celsius,
+.fahrenheit {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #464141;
+  cursor: pointer;
+}
+
+#celsius:hover, #fahrenheit:hover {
+  text-decoration: underline;
+}
+
+.fa-cloud-sun,
+.fa-cloud-rain,
+.fa-cloud,
+.fa-cloud-sun,
+.fa-cloud-showers-heavy {
+  font-size:16px;
+}
+
+small{
+  text-align: center;
+  display: inline-block;
+  padding: 2px;
+  font-size: 12px;
+  color: #464141;
+}
+
+.github-link {
+  text-decoration: none;
+  color: #1776dc;
+}
+
+.linkedin-link {
+  text-decoration: none;
+  color: #464141;
+}
+
+.github-link:hover,.linkedin-link:hover{
+  text-decoration: underline;
+} 
+
