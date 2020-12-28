@@ -1,8 +1,8 @@
 h1,
 h3,
 h5,
-p,
-li {
+li,
+p {
   font-family: sans-serif;
   text-align: left;
   line-height: 1;
@@ -32,6 +32,9 @@ ul {
   padding:4px;
 }
 
+ul.additional-info{
+  margin:0; 
+}
 li {
   list-style: none;
   font-weight: 520;
@@ -40,8 +43,8 @@ li {
 
 li.special {
   float: center;
-  font-size: 13px;
-  margin-left: 12px;
+  font-size: 12px;
+  margin-left: 22px;
   padding: 5px;
 }
 
@@ -75,8 +78,8 @@ li.forecast{
 }
 
 .footerContainer {
-  margin: 8px auto;
-  padding: 0px;
+  margin:8px auto;
+  padding: 0;
   max-width: 450px;
   max-height: fit-content;
 }

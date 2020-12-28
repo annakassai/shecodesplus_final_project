@@ -61,7 +61,7 @@ function submitCity(event) {
 }
    search("Vienna")
    
-   let form = document.querySelector("#search-city")
-   form.addEventListener("submit", submitCity)
+   let searchcityButton = document.querySelector("#search-city");
+   searchcityButton.addEventListener("submit", submitCity);
 
   
