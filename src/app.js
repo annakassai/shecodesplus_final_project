@@ -46,11 +46,22 @@ function displayWeather(response) {
     iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function search(city) {
    let apiKey = "a762ee58da3312e3b42c763f03cdad42";
    let units = `metric`;
-   let city = "Sopron";
    let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
    let apiUrl = `${apiEndpoint}?q=${city}&units=${units}&appid=${apiKey}`;
-   console.log(apiUrl);
-   
    axios.get(apiUrl).then(displayWeather);
+}
+
+function submitCity(event) {
+    event.preventDefault();
+    cityinputElement = document.querySelector("#city-input");
+    search(cityinputElement.value)
+}
+   search("Vienna")
+   
+   let form = document.querySelector("#search-city")
+   form.addEventListener("submit", submitCity)
+
+  
