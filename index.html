@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/a549435b62.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+</head>
+<body>
+<section>
+  <div class="container">
+    <div class="firstContainer">
+       <form id="search-city">
+        <div class="row">
+          <div class="col-6">
+            <input type="search" placeholder="🔍Enter your city here" class="searchengine" id="city-input" autocomplete="off" />
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-primary" id="submit-location">Search</button>
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-warning" id="location">Locate</button>
+          </div>
+        </div>  
+      </form>
+  <div class="row">
+    <div class="col-12">
+      <h1 class="data" id="current-city">
+          Vienna
+      </h1>
+      <h3 class="data" id="current-day"> 
+          Sunday 16:32
+      </h3>
+    </div>
+    <div class="row">
+    <div class="col-7">
+      <h5 class="data" id="description">Sunny</h5>
+      <h5 class="data" id="temperature"><i class="fas fa-sun"></i>
+        <span class="temperature" id="current-temperature">17</span>
+        <span class="units"><a href="#" class="celsius" id="celsius"> °C </a> | <a href="#" class="fahrenheit" id="fahrenheit">
+          °F </a></span>
+      </h5>
+       <h5 class="data" id="date">
+        26 December 2020
+      </h5>
+    </div>
+  <div class="col-5">
+    <ul class="additional-info">
+      <li class="special">Pressure: <span class="special" id="pressure">2</span> hPa</li>
+      <li class="special">Humidity: <span class="special" id="humidity">67</span> %</li>
+      <li class="special">Wind: <span class="special" id="wind-speed">8</span> km/h</li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="innerContainer">
+    <div class="row">
+      <div class="col-4">
+        <ul class= "weekdays">
+          <li class="day">Sunday</li>
+          <li class="day">Monday</li>
+          <li class="day">Tuesday</li>
+          <li class="day">Wednesday</li>
+          <li class="day">Friday</li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <ul class="icons">
+          <li class="graph"><i class="fas fa-cloud-sun"></i></li>
+          <li class="graph"><i class="fas fa-cloud-rain"></i></li>
+          <li class="graph"><i class="fas fa-cloud"></i></li>
+          <li class="graph"><i class="fas fa-cloud-sun"></i></li>
+          <li class="graph"><i class="fas fa-cloud-showers-heavy"></i></li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <ul class="temperature">
+          <li class="forecast">1°C</li>
+          <li class="forecast">3°C</li>
+          <li class="forecast">6°C</li>
+          <li class="forecast">3°C</li>
+          <li class="forecast">3°C</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="footerContainer">
+    <small class="link">
+      <p>
+        <a
+          class="github-link"
+          href="https://github.com/annakassai/final_project"
+          target="_blank"
+        >
+          Open-source code</a
+        >, by
+        <a
+          class="linkedin-link"
+          href="https://www.linkedin.com/in/annakassai91/"
+          target="_blank"
+        >
+          Anna Kassai</a
+        >
+      </p>
+    </small>
+  </div>    
+</div>   
+    <script src="src/index.js"></script>
+</body>
+</html>
