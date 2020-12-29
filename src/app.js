@@ -20,6 +20,34 @@ function formatTime(timestamp) {
     return `${currentDay} ${currentHours}:${currentMinutes}`
 }
 
+function formatDate(){
+  
+    let now = new Date();
+    let months = [
+    "January",
+    "Feburary",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+    ];
+  
+    let date = now.getDate();
+    let month = months[now.getMonth()];
+    let year = now.getFullYear();
+  
+    currentDate = document.querySelector("#date");
+    currentDate.innerHTML = `${date} ${month} ${year}`;
+  }
+  
+  formatDate()
+
 function displayWeather(response) { 
     let temperatureElement = document.querySelector("#current-temperature"); 
     let cityElement=document.querySelector("#current-city");
