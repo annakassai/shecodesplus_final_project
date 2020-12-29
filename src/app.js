@@ -1,14 +1,12 @@
-function formatDate(timestamp) {
-    let date = new Date(timestamp); 
-    let hours = date.getHours();
-    if (hours < 10) {
-        `0${hours}`
-    };
-    let minutes = date.getMinutes();
-    if (minutes < 10) {
-        `0${minutes}`
-    };
-    let days= [
+function formatTime(timestamp) {
+    let currentTime = new Date(timestamp); 
+    let currentHours = currentTime.getHours();
+    if (currentHours < 10)
+        currentHours = `0${currentHours}`;
+    let currentMinutes = currentTime.getMinutes();
+    if (currentMinutes < 10)
+        currentMinutes = `0${currentMinutes}`;
+    let weekDays= [
         "Sunday",
         "Monday",
         "Tuesday",
@@ -17,9 +15,9 @@ function formatDate(timestamp) {
         "Friday",
         "Saturday"
     ];
-    let day = days[date.getDay()];
+    let currentDay = weekDays[currentTime.getDay()];
 
-    return `${day} ${hours}:${minutes}`
+    return `${currentDay} ${currentHours}:${currentMinutes}`
 }
 
 function displayWeather(response) { 
@@ -29,7 +27,8 @@ function displayWeather(response) {
     let pressureElement= document.querySelector("#pressure");
     let humidityElement= document.querySelector("#humidity");
     let windspeedElement= document.querySelector("#wind-speed");
-    let dateElement=document.querySelector("#current-day-time");
+    let timeElement=document.querySelector("#current-day-time");
+    let dateElement=document.querySelector("#date");
     let iconElement=document.querySelector("#icon");
    
     temperatureElement.innerHTML= Math.round(response.data.main.temp);
@@ -38,7 +37,7 @@ function displayWeather(response) {
     pressureElement.innerHTML = response.data.main.pressure;
     humidityElement.innerHTML=response.data.main.humidity;
     windspeedElement.innerHTML= Math.round(response.data.wind.speed);
-    dateElement.innerHTML=formatDate(response.data.dt*1000);
+    timeElement.innerHTML=formatTime(response.data.dt*1000);
     iconElement.setAttribute(
         "src",
         `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -59,9 +58,26 @@ function submitCity(event) {
     cityinputElement = document.querySelector("#city-input");
     search(cityinputElement.value)
 }
-   search("Vienna")
-   
+    
    let searchcityButton = document.querySelector("#search-city");
    searchcityButton.addEventListener("submit", submitCity);
 
+   function searchLocation(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let apiKey = "a762ee58da3312e3b42c763f03cdad42";
+    let units = "metric";
+    let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+    let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(displayWeather);
+  }
   
+  function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
+  
+  let locationButton = document.querySelector("#location");
+  locationButton.addEventListener("click", getCurrentLocation);
+
+  search("Vienna")
