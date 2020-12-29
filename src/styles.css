@@ -18,7 +18,7 @@ h1 {
 
 h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 4px;
 }
 
@@ -79,29 +79,31 @@ li.forecast{
 
 .footerContainer {
   margin:8px auto;
-  padding: 0;
+  padding-left: 10px;
   max-width: 450px;
   max-height: fit-content;
 }
 
 .searchengine {
   margin-left: 10px;
-  padding: 5px 12px;
+  padding: 5px 10px;
   border-radius: 4px;
   color: #464141;
 }
 
 #submit-location {
-  padding: 5px 18px;
+  padding: 5px 20px;
   margin-left: 10px;
   border-radius: 8px;
   opacity: 0.9;
+  transition: all 200ms ease;
 }
 
 #location {
-  padding: 5px 18px;
+  padding: 5px 20px;
   border-radius: 8px;
   opacity: 0.9;
+  transition: all 200ms ease;
 }
 
 .innerContainer {
@@ -135,6 +137,7 @@ img {
 .temperature {
   font-size: 60px;
   font-weight: 700px;
+  text-shadow: #cccccc 1px 0 10px;
 }
 
 .units {
@@ -154,6 +157,7 @@ img {
 
 #celsius:hover, #fahrenheit:hover {
   text-decoration: underline;
+  color: #464141;
 }
 
 .fa-cloud-sun,
@@ -182,7 +186,17 @@ small{
   color: #464141;
 }
 
-.github-link:hover,.linkedin-link:hover{
+.github-link:hover{
   text-decoration: underline;
+  color: #1776dc;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.linkedin-link:hover{
+  text-decoration: underline;
+  color: #464141;  
+  opacity: 0.9;
+  cursor: pointer;
 } 
 
