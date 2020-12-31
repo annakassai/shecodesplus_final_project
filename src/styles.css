@@ -158,6 +158,7 @@ img {
 
 .active:hover,.fahrenheit:hover{
   text-decoration: none;
+  color: #464141;
 }
 
 .fa-cloud-sun,
