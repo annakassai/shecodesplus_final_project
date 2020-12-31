@@ -141,23 +141,22 @@ img {
 }
 
 .units {
-  position: relative; 
-  font-size: 14px;
+  position: relative;
   top: -32px;
 }
 
-.celsius,
-.fahrenheit {
-  font-size: 14px;
-  margin-bottom: 0;
+.active {
   text-decoration: none;
   color: #464141;
-  cursor: pointer;
+  cursor: default;
 }
 
-#celsius:hover, #fahrenheit:hover {
-  text-decoration: underline;
-  color: #464141;
+#celsius-link,#fahrenheit-link{
+  text-decoration:none;
+}
+
+.active:hover,.fahrenheit:hover{
+  text-decoration: none;
 }
 
 .fa-cloud-sun,
