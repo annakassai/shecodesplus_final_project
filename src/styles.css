@@ -2,7 +2,8 @@ h1,
 h3,
 h5,
 li,
-p {
+p
+a {
   font-family: sans-serif;
   text-align: left;
   line-height: 1;
