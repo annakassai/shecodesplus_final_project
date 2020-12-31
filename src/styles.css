@@ -47,8 +47,7 @@ li {
 li.special {
   float: center;
   font-size: 12px;
-  margin-left: 12px;
-  padding: 5px;
+  padding: 4px;
 }
 
 li.forecastTime {
