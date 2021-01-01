@@ -85,12 +85,12 @@ function displayForecast(response){
   forecastElement.innerHTML=null; 
   let forecast=null;
 
-  for (let index=0; index <= 4; index++){
+  for (let index=0; index <=5; index++){
     forecast = response.data.list[index];
     forecastElement.innerHTML+=`
     	<div class="col-2">
         <ul class= "fivedaysforecast" id="forecast">
-          <li class="forecastTime" id="time">${formatHours(forecast.dt*1000)}</li>
+          <li class="forecast-time" id="time">${formatHours(forecast.dt*1000)}</li>
           <li class="graph"><img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="" class="forecast-graph"/></li>
           <li class="forecast-temperature">
           <strong>${Math.round(forecast.main.temp_max)}°</strong>/${Math.round(forecast.main.temp_min)}°</li>      

@@ -31,12 +31,6 @@ h5 {
 ul.additional-info{
   margin:0; 
 }
-#forecast {
-  margin-left: 6px;
-  margin-right: 6px;
-  padding-left: 6px;
-  padding-right: 6px;
-}
 
 li {
   list-style: none;
@@ -50,7 +44,7 @@ li.special {
   padding: 4px;
 }
 
-li.forecastTime {
+li.forecast-time {
   text-align: center;
   font-weight:600;
   margin:12px;
@@ -58,22 +52,19 @@ li.forecastTime {
 }
 
 li.graph{
-  margin:12px;
+  margin:2px;
   padding:8px;
 }
 
 li.forecast-temperature{
   text-align: center;
-  font-size: 13px;
   margin: 12px;
-  padding:10px; 
+  padding:8px; 
 }
 
 .forecast-graph{
-  display: block;
-  margin: 0 auto;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 }
 
 .firstContainer {
@@ -88,23 +79,19 @@ li.forecast-temperature{
   box-shadow: 0px 15px 15px 0px rgba(255, 255, 255, 0.5);
 }
 
-.footerContainer {
-  margin:8px auto;
-  padding-left: 10px;
-  max-width: 450px;
-  max-height: fit-content;
-}
-
 .searchengine {
-  margin-left: 10px;
-  padding: 5px 10px;
+  margin-top: 2px;
+  margin-left: 8px;
+  padding: 4px 10px;
   border-radius: 4px;
+  opacity: 0.9;
   color: #464141;
 }
 
 #submit-location {
   padding: 5px 20px;
-  margin-left: 10px;
+  margin: 2px;
+  margin-left: 4px;
   border-radius: 8px;
   opacity: 0.9;
   transition: all 200ms ease;
@@ -112,6 +99,8 @@ li.forecast-temperature{
 
 #location {
   padding: 5px 20px;
+  margin-top: 2px;
+  margin-left: -8px;
   border-radius: 8px;
   opacity: 0.9;
   transition: all 200ms ease;
@@ -129,6 +118,13 @@ li.forecast-temperature{
   box-shadow: 0px 15px 15px 0px rgba(255, 255, 255, 0.5);
 }
 
+#forecast {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .data {
   margin-left: 20px;
   padding:4px;
@@ -138,7 +134,7 @@ li.forecast-temperature{
   text-transform: capitalize;
 }
 
-img {
+img.icon {
   padding:0;
   margin: 0;
   width:60px;
@@ -171,12 +167,16 @@ img {
   color: #464141;
 }
 
-small{
-  text-align: center;
-  display: inline-block;
-  padding: 2px;
+.col-2{
+  padding: 0;
+}
+
+.footerContainer {
   font-size: 12px;
-  color: #464141;
+  margin:8px auto;
+  padding-left: 10px;
+  max-width: 450px;
+  max-height: fit-content;
 }
 
 .github-link {
