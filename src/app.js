@@ -59,7 +59,7 @@ function displayWeather(response) {
     let cityElement=document.querySelector("#current-city");
     let descriptionElement=document.querySelector("#description");
     let pressureElement= document.querySelector("#pressure");
-    let humidityElement= document.querySelector("#humidity");
+    let precipitationElement= document.querySelector("#precipitation");
     let windspeedElement= document.querySelector("#wind-speed");
     let timeElement=document.querySelector("#current-day-time");
     let iconElement=document.querySelector("#icon");
@@ -70,7 +70,7 @@ function displayWeather(response) {
     cityElement.innerHTML= response.data.name;
     descriptionElement.innerHTML=response.data.weather[0].description; 
     pressureElement.innerHTML = response.data.main.pressure;
-    humidityElement.innerHTML=response.data.main.humidity;
+    precipitationElement.innerHTML=response.data.main.humidity;
     windspeedElement.innerHTML= Math.round(response.data.wind.speed);
     timeElement.innerHTML=formatTime(response.data.dt*1000);
     iconElement.setAttribute(
