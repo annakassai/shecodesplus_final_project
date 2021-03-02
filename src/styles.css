@@ -1,10 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+
 h1,
 h3,
 h5,
 li,
 p
 a {
-  font-family: sans-serif;
   text-align: left;
   line-height: 1;
   color: #464141;
@@ -25,17 +28,18 @@ h3 {
 
 h5 {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 ul.additional-info{
-  margin:0; 
+  margin-top:20px;
+  margin-left: -10px; 
 }
 
 li {
   list-style: none;
-  font-weight: 520;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 li.special {
@@ -64,38 +68,40 @@ li.forecast-temperature{
 
 .firstContainer {
   margin:18px auto;
+  margin-top: 24px;
+  margin-bottom:6px;
   padding: 18px;
   max-width: 450px;
   max-height: fit-content;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 25px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(340deg, #f5f7fa 0%, #c3cfe2 100%);
   background-blend-mode: screen;
-  box-shadow: 0px 15px 15px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 15px 15px 0px rgba(255, 255, 255, 1.0);
 }
 
 .searchengine {
-  margin-top: 2px;
-  margin-left: 8px;
+  margin-top: 4px;
+  margin-left: 6px;
   padding: 4px 10px;
-  border-radius: 4px;
+  border-radius: 6px;
+  outline: none;
   opacity: 0.9;
   color: #464141;
 }
 
 #submit-location {
-  padding: 5px 20px;
-  margin: 2px;
-  margin-left: 4px;
+  padding: 5px 14px;
+  margin-top: 4px;
+  margin-left: 18px;
   border-radius: 8px;
   opacity: 0.9;
   transition: all 200ms ease;
 }
 
 #location {
-  padding: 5px 20px;
-  margin-top: 2px;
-  margin-left: -8px;
+  padding: 5px 14px;
+  margin-top: 4px;
   border-radius: 8px;
   opacity: 0.9;
   transition: all 200ms ease;
@@ -118,7 +124,7 @@ li.forecast-temperature{
 img.icon {
   padding:0;
   margin: 0;
-  width:60px;
+  width: 60px;
   vertical-align: baseline;
 }
 
@@ -130,7 +136,7 @@ img.icon {
 
 .units {
   position: relative;
-  top: -32px;
+  top: -36px;
 }
 
 .active {
@@ -153,7 +159,7 @@ img.icon {
   padding: 2px;
   max-width: 450px;
   max-height: fit-content;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   background-image: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 100%);
   background-blend-mode: screen;
@@ -172,34 +178,33 @@ img.icon {
 }
 
 .footerContainer {
-  font-size: 12px;
   margin:2px auto;
-  padding-left: 10px;
-  max-width: 450px;
+}
+
+.link {
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 440px;
   max-height: fit-content;
+  font-size: 11px;
+  font-family: 600;
+  text-align: center;
+  line-height: 1;
+  color: #2a292c;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-.github-link {
+.linkedin-link,.github-link,.netlify-link {
   text-decoration: none;
-  color: #1776dc;
+  font-weight: 600;
+  color:#2a292c;
 }
 
-.linkedin-link {
-  text-decoration: none;
-  color: #464141;
-}
-
-.github-link:hover{
+.linkedin-link:hover,.github-link:hover,.netlify-link:hover{
   text-decoration: underline;
-  color: #1776dc;
+  color: #2a292c;
   opacity: 0.9;
   cursor: pointer;
 }
-
-.linkedin-link:hover{
-  text-decoration: underline;
-  color: #464141;  
-  opacity: 0.9;
-  cursor: pointer;
-} 
 
