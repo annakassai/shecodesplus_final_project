@@ -45,7 +45,7 @@ li {
 li.special {
   float: center;
   font-size: 12px;
-  padding: 4px;
+  padding: 5px;
 }
 
 li.forecast-time {
@@ -156,7 +156,6 @@ img.icon {
 
 .innerContainer {
   margin: 6px;
-  padding: 2px;
   max-width: 450px;
   max-height: fit-content;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -192,7 +191,6 @@ img.icon {
   text-align: center;
   line-height: 1;
   color: #2a292c;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .linkedin-link,.github-link,.netlify-link {
