@@ -39,12 +39,12 @@ ul.additional-info{
 li {
   list-style: none;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12.5px;
 }
 
 li.special {
   float: center;
-  font-size: 12px;
+  font-size: 12.5px;
   padding: 5px;
 }
 
