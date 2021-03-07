@@ -21,23 +21,21 @@
           <div class="col-6">
             <input type="search" placeholder="🔍Enter a city here" class="searchengine" id="city-input" autocomplete="off" />
           </div>
-          <div class="col-3">
+          <div class="col-6">
             <button type="submit" class="btn btn-primary" id="submit-location">Search</button>
-          </div>
-          <div class="col-3">
             <button type="submit" class="btn btn-warning" id="location">Locate</button>
           </div>
         </div>  
       </form>
   <div class="row">
-    <div class="col-12">
+    <div class="col-sm-12">
       <h1 class="data" id="current-city">
       </h1>
       <h3 class="data" id="current-day-time">
       </h3>
     </div>
     <div class="row">
-    <div class="col-7">
+    <div class="col-sm-7">
       <h5 class="data" id="description"></h5>
       <h5 class="data" id="temperature"> <img src="https://ssl.gstatic.com/onebox/weather/64/rain.png" alt="cloudy" class="icon" id="icon"/>
         <span class="temperature" id="current-temperature"></span>
@@ -49,7 +47,7 @@
         <span id="date"></span>
        </h5>
     </div>
-  <div class="col-5">
+  <div class="col-sm-5 d-none d-md-block">
     <ul class="additional-info">
       <li class="special">Pressure: <span class="special" id="pressure"></span> hPa</li>
       <li class="special">Precipitation: <span class="special" id="precipitation"></span> %</li>

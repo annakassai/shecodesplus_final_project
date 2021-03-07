@@ -72,7 +72,6 @@ li.forecast-temperature{
   margin-bottom:6px;
   padding: 18px;
   max-width: 450px;
-  max-height: fit-content;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   background-image: linear-gradient(340deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -82,26 +81,27 @@ li.forecast-temperature{
 
 .searchengine {
   margin-top: 4px;
-  margin-left: 6px;
+  margin-left: 8px;
   padding: 4px 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   outline: none;
   opacity: 0.9;
   color: #464141;
 }
 
 #submit-location {
-  padding: 5px 14px;
+  padding: 5px 13px;
   margin-top: 4px;
-  margin-left: 18px;
-  border-radius: 8px;
+  margin-left: 22px;
+  border-radius: 10px;
   opacity: 0.9;
 }
 
 #location {
-  padding: 5px 14px;
+  padding: 5px 13px;
   margin-top: 4px;
-  border-radius: 8px;
+  margin-left: 4px ;
+  border-radius: 10px;
   opacity: 0.9;
 }
 
@@ -154,8 +154,6 @@ img.icon {
 
 .innerContainer {
   margin: 6px;
-  max-width: 450px;
-  max-height: fit-content;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   background-image: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -204,3 +202,46 @@ img.icon {
   cursor: pointer;
 }
 
+@media (max-width:576px){
+ .firstContainer{
+   margin:12px auto;
+ }
+
+ #city-input, #submit-location{
+   display: block;
+   margin: 0 auto;
+ }
+
+ #location {
+   display: none;
+ }
+
+ #city-input {
+   margin-left: 8px;
+ }
+
+ #submit-location {
+   margin-left: 64px;
+   padding:5px 9px;
+ }
+
+ .data {
+   text-align: center;
+ }
+ 
+ #forecast {
+   margin:0;
+   padding: 0;
+ }
+
+ li.forecast-time, li.forecast-temperature {
+   margin:4px; 
+   padding:8px;
+ }
+
+ li.graph{
+   display: block;
+   margin-left:-6px;
+ }
+
+}
