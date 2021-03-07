@@ -204,7 +204,8 @@ img.icon {
 
 @media (max-width:576px){
  .firstContainer{
-   margin:12px auto;
+   margin:8px auto;
+   padding: 10px;
  }
 
  #city-input, #submit-location{
