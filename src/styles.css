@@ -208,10 +208,9 @@ img.icon {
    padding: 10px;
  }
 
- #city-input, #submit-location{
-   display: block;
-   margin: 0 auto;
- }
+.searchengine {
+  margin-left: 10px;
+}
 
  #location {
    display: none;
